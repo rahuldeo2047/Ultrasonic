@@ -66,3 +66,9 @@ unsigned int Ultrasonic::read(uint8_t und) {
 unsigned int Ultrasonic::distanceRead(uint8_t und) {
   return read(und);
 }
+/*.
+ * for getting one way time taking
+ */
+unsigned int Ultrasonic::timeRead() {
+  return read(2);
+}
